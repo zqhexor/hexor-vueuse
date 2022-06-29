@@ -1,0 +1,46 @@
+{
+  "name": "@zqhexor/vueuse",
+  "version": "1.0.0",
+  "description": "vueuse",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/hexor-vueuse.umd.js",
+  "module": "./dist/hexor-vueuse.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hexor-vueuse.es.js",
+      "require": "./dist/hexor-vueuse.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [
+    "vueuse"
+  ],
+  "author": "hexOr",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.9.12",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "vue-demi": "latest"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.4.9",
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  }
+}
