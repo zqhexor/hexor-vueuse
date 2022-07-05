@@ -1,21 +1,27 @@
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
+---
+layout: home
 
-const members = [
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/41619463?v=4',
-    name: 'Hexor Zeng',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/zqhexor' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
-  },
-]
-</script>
+hero:
+  name: VueUse
+  text: A lib for CompositionAPI.
+  tagline: Lorem ipsum...
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/getStarted
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
 
-# Our Team
+features:
+  - icon: ⚡️
+    title: Vite, The DX that can't be beat
+    details: Lorem ipsum...
+  - icon: 🖖
+    title: Power of Vue meets Markdown
+    details: Lorem ipsum...
+  - icon: 🛠️
+    title: Simple and minimal, always
+    details: Lorem ipsum...
 
-Say hello to our awesome team.
-
-<VPTeamMembers size="small" :members="members" />
+---
