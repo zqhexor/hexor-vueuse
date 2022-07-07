@@ -11,7 +11,7 @@
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "vitest", "vitest/globals"],
     "skipLibCheck": true,
     "declaration": true,
     "paths": {

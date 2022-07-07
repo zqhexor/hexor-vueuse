@@ -6,12 +6,14 @@ export function useCheckboxChecker({
   max = undefined,
   config = { value: 'value', disabled: 'disabled' }
 }: CheckboxCheckerOptions = {}): CheckerReturn {
-  const { value, disabled } = config;
+  const { value = 'value', disabled = 'disabled' } = config;
   const checked = ref<CheckboxChecked>([]);
   const options = ref<Array<OptionsItem>>([]);
 
   // 可用选项
-  const enabledOptions = computed(() => options.value.filter((option: OptionsItem) => option[disabled] !== true));
+  const enabledOptions = computed(() =>
+    options.value.filter((option: OptionsItem) => option[disabled] !== true)
+  );
 
   // 最大选项默认值
   const maxDefaultRef = computed(() => {
@@ -28,9 +30,11 @@ export function useCheckboxChecker({
   // 选择全部操作
   const checkAll = () => {
     if (checked.value.length === enabledOptions.value.length) {
-      checked.value = [];
+      // 不改变数组引用
+      checked.value.splice(0, checked.value.length);
     } else {
-      checked.value = enabledOptions.value.map((item: any) => item[value]);
+      checked.value.splice(0, checked.value.length);
+      enabledOptions.value.forEach((item) => checked.value.push(item[value]));
     }
   };
 

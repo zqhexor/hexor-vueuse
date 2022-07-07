@@ -4,7 +4,7 @@ import { ref } from 'vue-demi';
 export function useRadioChecker({
   config = { value: 'value', disabled: 'disabled' }
 }: RadioCheckerOptions = {}): CheckerReturn {
-  const { value, disabled } = config;
+  const { value = 'value', disabled = 'disabled' } = config;
   const checked = ref<RadioChecked>('');
   const options = ref<Array<OptionsItem>>([]);
 
