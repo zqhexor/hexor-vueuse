@@ -3,11 +3,11 @@ const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
   build: {
-    target: 'es2015',
+    // target: 'es2015',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'hexor-vueuse',
-      fileName: 'hexor-vueuse',
+      fileName: 'index',
       formats: ['es', 'cjs', 'umd'],
       // fileName: (format) => `hexor-vueuse.${format}.js`
     },

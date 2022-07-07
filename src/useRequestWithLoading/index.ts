@@ -1,24 +1,38 @@
 import type { Ref } from 'vue-demi';
 import { reactive, toRef, watch, onBeforeUnmount } from 'vue-demi';
-
-export type RequestType = (payload: any) => Promise<unknown>;
+import { RequestType } from './../types';
 
 export interface RequestWithLoadingConfigOptions {
+  /**
+   * @desc 是否立即执行
+   * @defaultValue `false`
+   */
   immediate?: boolean;
-  defaultPayload?: unknown;
+  /**
+   * @desc 默认请求参数
+   */
+  defaultPayload?: any;
 }
 
+/**
+ *
+ */
 export interface RequestWithLoadingReturn {
+  /**
+   *  @desc loading状态， 改变loading状态可触发请求，建议在模板中使用
+   */
   loading: Ref<boolean>;
+  /**
+   *  @desc 触发请求，可传入参数
+   */
   doRequest: (payload: any) => void;
 }
 
 /**
- * 给请求带上loading
- * @param request {Promise<unknown>} 请求接口
- * @param immediate {boolean} 是否立即执行接口
- * @param defaultPayload {*} 默认请求参数
- * @returns {{doRequest: (payload: any) => void , loading: Ref<boolean>}}
+ * 请求绑定loading
+ * @param request 请求接口
+ * @param __namedParameters 配置参数（可选）
+ * @returns loading: 建议模板中使用；doRequest:其他情况请使用
  */
 export function useRequestWithLoading(
   request: RequestType,
