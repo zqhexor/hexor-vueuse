@@ -1,4 +1,4 @@
-import type { Ref, ComputedRef } from 'vue-demi';
+import type { ComputedRef, Ref } from 'vue-demi';
 
 /**
  * 选择器类型

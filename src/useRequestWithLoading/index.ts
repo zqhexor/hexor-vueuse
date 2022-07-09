@@ -1,6 +1,6 @@
 import type { Ref } from 'vue-demi';
-import { reactive, toRef, watch, onBeforeUnmount } from 'vue-demi';
-import { RequestType } from './../types';
+import { onBeforeUnmount, reactive, toRef, watch } from 'vue-demi';
+import type { RequestType } from './../types';
 
 export interface RequestWithLoadingConfigOptions {
   /**

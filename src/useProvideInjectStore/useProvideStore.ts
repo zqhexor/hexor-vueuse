@@ -1,9 +1,9 @@
-import { provide, isVue3 } from 'vue-demi';
+import { isVue3, provide } from 'vue-demi';
 import type { App, InjectionKey } from 'vue-demi';
 
-type ProvideStoreConfig = {
+interface ProvideStoreConfig {
   global?: boolean;
-};
+}
 
 export type ProvideStoreReturn = ReturnType<typeof useProvideStore>;
 

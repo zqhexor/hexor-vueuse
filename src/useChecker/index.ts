@@ -1,6 +1,6 @@
 import { useRadioChecker } from './useRadioChecker';
 import { useCheckboxChecker } from './useCheckboxChecker';
-import { CHECKER_TYPE, CheckerOptions, CheckerReturn } from './types';
+import { CHECKER_TYPE, type CheckerOptions, type CheckerReturn } from './types';
 
 export { CHECKER_TYPE };
 

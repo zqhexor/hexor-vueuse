@@ -1,5 +1,5 @@
-import { CheckerReturn, CheckboxCheckerOptions, CheckboxChecked, OptionsItem } from './types';
-import { ref, computed } from 'vue-demi';
+import { computed, ref } from 'vue-demi';
+import type { CheckboxChecked, CheckboxCheckerOptions, CheckerReturn, OptionsItem } from './types';
 
 export function useCheckboxChecker({
   min = 0,

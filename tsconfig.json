@@ -9,11 +9,13 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "jsx": "preserve",
-    "sourceMap": true,
     "resolveJsonModule": true,
     "types": ["vite/client", "vitest", "vitest/globals"],
     "skipLibCheck": true,
     "declaration": true,
+    "sourceMap": false,
+    // 是否只输出声明文件
+    "emitDeclarationOnly": true,
     "paths": {
       "@zqhexor/vueuse": ["./src"]
     }

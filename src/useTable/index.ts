@@ -1,6 +1,5 @@
-import { reactive, toRefs, ref, readonly } from 'vue-demi';
-import type { Ref } from 'vue-demi';
-import { RequestType, AnyObject } from './../types';
+import { type Ref, reactive, readonly, ref, toRefs } from 'vue-demi';
+import type { AnyObject, RequestType } from './../types';
 
 /**
  * 字段映射配置

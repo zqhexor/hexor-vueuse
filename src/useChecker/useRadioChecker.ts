@@ -1,5 +1,5 @@
-import { CheckerReturn, RadioCheckerOptions, RadioChecked, OptionsItem } from './types';
 import { ref } from 'vue-demi';
+import type { CheckerReturn, OptionsItem, RadioChecked, RadioCheckerOptions } from './types';
 
 export function useRadioChecker({
   config = { value: 'value', disabled: 'disabled' }
