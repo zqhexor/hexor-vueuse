@@ -8,13 +8,13 @@ export default defineConfig({
     environment: 'happy-dom',
     reporters: 'verbose',
     deps: {
-      inline: ['vue2', '@vue/composition-api', 'vue-demi'],
+      inline: ['vue2', '@vue/composition-api', 'vue-demi']
     },
     coverage: {
       include: ['src/*'],
       clean: true,
       lines: 99,
-      statements: 99,
-    },
-  },
+      statements: 99
+    }
+  }
 });

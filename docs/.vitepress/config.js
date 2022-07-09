@@ -6,9 +6,7 @@ export default {
       { text: 'Functions', link: '/functions/', activeMatch: '/functions/' },
       { text: 'Github', link: 'https://github.com/zqhexor' }
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/zqhexor' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/zqhexor' }],
     sidebar: {
       // This sidebar gets displayed when user is
       // under `guide` directory.
@@ -16,8 +14,8 @@ export default {
         {
           text: 'Guide',
           items: [
-            { text: 'Introduction', link: '/guide/' }, 
-            { text: 'Get Started', link: '/guide/getStarted' },
+            { text: 'Introduction', link: '/guide/' },
+            { text: 'Get Started', link: '/guide/getStarted' }
           ]
         }
       ],
@@ -25,8 +23,8 @@ export default {
         {
           text: 'Functions',
           items: [
-            { text: 'Index', link: '/functions/' }, 
-            { text: 'useChecker', link: '/functions/useChecker' },
+            { text: 'Index', link: '/functions/' },
+            { text: 'useChecker', link: '/functions/useChecker' }
           ]
         }
       ]
