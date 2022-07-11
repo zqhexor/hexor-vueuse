@@ -41,6 +41,7 @@
     "@antfu/eslint-config": "^0.25.2",
     "@types/jest": "^28.1.4",
     "@types/node": "^17.0.35",
+    "element-plus": "^2.2.9",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
