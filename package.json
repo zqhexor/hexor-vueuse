@@ -35,7 +35,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "test:vue3": "vue-demi-switch 3 && vitest run --config ./config/test.ts --coverage",
-    "release": "npm run build && np"
+    "release": "npm run build && np",
+    "register:components": "vitepress-rc"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
@@ -51,6 +52,7 @@
     "typescript": "4.7.3",
     "vite": "^2.9.12",
     "vitepress": "^1.0.0-alpha.4",
+    "vitepress-theme-demoblock": "^1.4.2",
     "vitest": "^0.17.1",
     "vue": "^3.2.37"
   },

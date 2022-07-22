@@ -1,4 +1,11 @@
+import { demoBlockPlugin } from 'vitepress-theme-demoblock';
+
 export default {
+  markdown: {
+    config: (md) => {
+      md.use(demoBlockPlugin);
+    }
+  },
   themeConfig: {
     siteTitle: 'hexOr-vueuse',
     nav: [
