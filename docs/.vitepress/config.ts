@@ -31,6 +31,7 @@ module.exports = defineConfig({
           items: [
             { text: 'Index', link: '/functions/' },
             { text: 'useChecker', link: '/functions/useChecker' },
+            { text: 'useRequestWithLoading', link: '/functions/useRequestWithLoading' },
             { text: 'useTable', link: '/functions/useTable' }
           ]
         }

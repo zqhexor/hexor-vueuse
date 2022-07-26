@@ -27,14 +27,12 @@ options.value = [
 <template>
   <div>
     <p>
-      <el-button type="primary" :plain="!allActive" @click="checkAll"> 全部 </el-button>
+      <el-button :type="`${allActive ? 'primary' : ''}`" @click="checkAll"> 全部 </el-button>
       <el-button
         v-for="item in options"
         :key="item.value"
         :value="item.value"
-        :plain="!isActive(item.value)"
-        :disabled="item.disabled"
-        type="primary"
+        :type="`${isActive(item.value) ? 'primary' : ''}`"
         @click="check(item)"
       >
         {{ item.label }}
