@@ -1,4 +1,4 @@
-# 概述
+# useChecker
 
 `useChecker` 是一个用于自定义选择器的 API。
 
