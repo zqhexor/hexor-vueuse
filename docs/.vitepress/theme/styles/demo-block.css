@@ -31,3 +31,24 @@
 .demo-block__action{
   color: var(--vp-c-text);
 }
+
+.vp-doc .demo-block table {
+  display: unset;
+  border-collapse: unset;
+  margin: unset;
+  overflow-x: unset;
+}
+
+.vp-doc .demo-block tr {
+  border-top: unset;
+  transition: unset;
+}
+
+.vp-doc .demo-block th {
+  font-size: unset;
+  font-weight: unset;
+}
+
+.vp-doc .demo-block th, .vp-doc .demo-block td {
+  border: unset;
+}
