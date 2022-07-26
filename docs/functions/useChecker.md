@@ -1,8 +1,3 @@
----
-title: useChecker
-order: 2
----
-
 # 概述
 
 `useChecker` 是一个用于自定义选择器的 API。

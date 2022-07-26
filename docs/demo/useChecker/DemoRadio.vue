@@ -29,8 +29,7 @@ options.value = [
         v-for="item in options"
         :key="item.value"
         :value="item.value"
-        :plain="!isActive(item.value)"
-        type="primary"
+        :type="`${isActive(item.value) ? 'primary' : ''}`"
         @click="check(item)"
       >
         {{ item.label }}
