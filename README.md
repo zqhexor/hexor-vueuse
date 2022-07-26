@@ -58,4 +58,4 @@ const { checked, options, isActive, check } = useChecker({ type: CHECKER_TYPE.RA
 options.value = [{ value: 1, label: '选项1' }, { value: 2, label: '选项2' }]
 ```
 
-For more examples, please refer to the [Documentation]()
+For more examples, please refer to the [Documentation](http://110.42.240.50:8000/)
