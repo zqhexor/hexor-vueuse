@@ -1,0 +1,19 @@
+.vp-doc div[class*=language-] {
+  background-color: var(--custom-code-bg-color);
+}
+
+.vp-doc div[class*=language-]::before {
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc [class*='language-'] > span.copy {
+  background-color: var(--custom-code-bg-color);
+}
+
+.vp-doc [class*='language-'] > span.copy:hover {
+  background-color: var(--custom-code-copy-hover-bg-color);
+}
+
+.vp-doc [class*='language-'] > span.copy.copied::before, .vp-doc [class*='language-'] > span.copy:hover.copied::before {
+  color: var(--vp-c-text-1);
+}

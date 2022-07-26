@@ -1,10 +1,9 @@
-import { demoBlockPlugin } from 'vitepress-theme-demoblock';
+import { defineConfig } from 'vitepress';
+import { vitePluginVitepressDemo } from 'vite-plugin-vitepress-demo';
 
-export default {
-  markdown: {
-    config: (md) => {
-      md.use(demoBlockPlugin);
-    }
+module.exports = defineConfig({
+  vite: {
+    plugins: [vitePluginVitepressDemo()]
   },
   themeConfig: {
     siteTitle: 'hexOr-vueuse',
@@ -31,10 +30,11 @@ export default {
           text: 'Functions',
           items: [
             { text: 'Index', link: '/functions/' },
-            { text: 'useChecker', link: '/functions/useChecker' }
+            { text: 'useChecker', link: '/functions/useChecker' },
+            { text: 'useTable', link: '/functions/useTable' }
           ]
         }
       ]
     }
   }
-};
+});

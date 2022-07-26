@@ -1,0 +1,8 @@
+:root {
+  --custom-code-bg-color:rgba(125, 125, 125, 0.04);
+  --custom-code-copy-hover-bg-color:rgba(125, 125, 125, 0.1);
+}
+html.dark {
+  --custom-code-bg-color:rgb(26, 26, 26);
+  --custom-code-copy-hover-bg-color:rgba(255, 255, 255, 0.05);
+}
