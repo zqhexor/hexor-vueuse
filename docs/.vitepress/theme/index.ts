@@ -12,6 +12,6 @@ export default {
     app.use(ElementPlus, {
       locale: zhCn
     });
-    app.component('demo', DemoBlock);
+    app.component('Demo', DemoBlock);
   }
 };
