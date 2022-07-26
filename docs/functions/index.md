@@ -1,1 +1,1 @@
-function index
+# Let's start a journey！
