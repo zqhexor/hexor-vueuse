@@ -34,7 +34,7 @@
     "docs:dev": "vitepress dev docs --open",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "test:vue3": "vue-demi-switch 3 && vitest run --config vitest.config.ts --coverage",
+    "test": "vue-demi-switch 3 && vitest run --config vitest.config.ts --coverage",
     "release": "npm run build && np",
     "register:components": "vitepress-rc"
   },
