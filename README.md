@@ -52,8 +52,7 @@ yarn add @zqhexor/vueuse --save
 ## Usage
 
 ```js
-import { useChecker, CHECKER_TYPE } from '@zqhexor/vueuse';
-<!-- 此处修改填写简单使用示例 -->
+import { CHECKER_TYPE, useChecker } from '@zqhexor/vueuse';
 const { checked, options, isActive, check } = useChecker({ type: CHECKER_TYPE.RADIO })
 options.value = [{ value: 1, label: '选项1' }, { value: 2, label: '选项2' }]
 ```
