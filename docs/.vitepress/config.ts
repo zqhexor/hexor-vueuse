@@ -8,9 +8,17 @@ module.exports = defineConfig({
   themeConfig: {
     siteTitle: 'hexOr-vueuse',
     nav: [
-      { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
-      { text: 'Functions', link: '/functions/', activeMatch: '/functions/' },
-      { text: 'Github', link: 'https://github.com/zqhexor/hexor-vueuse' }
+      { text: '指南', link: '/guide/', activeMatch: '/guide/' },
+      { text: '文档', link: '/functions/', activeMatch: '/functions/' },
+      {
+        text: '1.0.3',
+        items: [
+          {
+            text: 'CHANGELOG',
+            link: 'https://github.com/zqhexor/hexor-vueuse/blob/master/CHANGELOG.md'
+          }
+        ]
+      }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/zqhexor/hexor-vueuse' }],
     sidebar: {
@@ -18,16 +26,16 @@ module.exports = defineConfig({
       // under `guide` directory.
       '/guide/': [
         {
-          text: 'Guide',
+          text: '指南',
           items: [
-            { text: 'Introduction', link: '/guide/' },
-            { text: 'Get Started', link: '/guide/getStarted' }
+            { text: '介绍', link: '/guide/' },
+            { text: '快速开始', link: '/guide/getStarted' }
           ]
         }
       ],
       '/functions/': [
         {
-          text: 'Functions',
+          text: '文档',
           items: [
             { text: 'GO', link: '/functions/' },
             { text: 'useChecker', link: '/functions/useChecker' },

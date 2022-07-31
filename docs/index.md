@@ -2,15 +2,15 @@
 layout: home
 
 hero:
-  name: hexOr VueUse
-  text: A lib like VueUse
-  tagline: This is a collection of utility functions based on Composition API...
+  name: hexOr-VueUse
+  text: nice~~~
+  tagline: 一个专注于业务的VUEUSE工具库
   actions:
     - theme: brand
-      text: Get Started
+      text: 快速开始
       link: /guide/getStarted
     - theme: alt
-      text: View on GitHub
+      text: 查看源码
       link: https://github.com/zqhexor/hexor-vueuse
 
 features:

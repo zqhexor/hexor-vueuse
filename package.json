@@ -37,7 +37,8 @@
     "test": "vue-demi-switch 3 && vitest run --config vitest.config.ts --coverage",
     "release": "npm run build && np",
     "prepare": "husky install",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "log:w": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
