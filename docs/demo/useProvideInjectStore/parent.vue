@@ -1,9 +1,9 @@
 <script>
-import { toRefs } from 'vue';
+import { defineComponent, toRefs } from 'vue';
 import Child from './child.vue';
 import { createUserStore } from './store.js';
 
-export default {
+export default defineComponent({
   name: 'Parent',
   components: {
     Child
@@ -16,7 +16,7 @@ export default {
       getYounger
     };
   }
-};
+});
 </script>
 
 <template>

@@ -1,8 +1,8 @@
 <script>
-import { toRefs } from 'vue';
+import { defineComponent, toRefs } from 'vue';
 import { useUserStore } from './store.js';
 
-export default {
+export default defineComponent({
   name: 'Child',
   setup() {
     const userStore = useUserStore();
@@ -13,7 +13,7 @@ export default {
       getYounger
     };
   }
-};
+});
 </script>
 
 <template>
