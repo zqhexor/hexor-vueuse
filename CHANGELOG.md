@@ -1,9 +1,10 @@
-## 1.0.3 (2022-07-31)
+## 1.0.3 (2022-08-16)
 
 
 ### Features
 
 * ✨init ts for lib ([f554abb](https://github.com/zqhexor/hexor-vueuse/commit/f554abb6afc54fcdd9ce70b9ec5a749d25be781f))
+* 调整文档 ([7c9a381](https://github.com/zqhexor/hexor-vueuse/commit/7c9a381e1061b303ad967d2838467e05a0e59346))
 * 更新依赖 ([cf9a9e1](https://github.com/zqhexor/hexor-vueuse/commit/cf9a9e15d8673f0ae1b9832dbbe55afc557f0f2b))
 * 配置husky ([72241e1](https://github.com/zqhexor/hexor-vueuse/commit/72241e13c093bd8bb201e13b49d620e249b3cec5))
 * 添加自动生成CHANGELOG.md ([1e28622](https://github.com/zqhexor/hexor-vueuse/commit/1e286224504a5940cbcb4f386ea7806af9261fe4))
