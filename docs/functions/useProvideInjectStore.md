@@ -51,3 +51,29 @@ new Vue({
   el: "#app",
 });
 ```
+
+## APIS
+
+### useProvideStore
+
+#### params
+
+| 参数      | 类型          | 描述          | 默认值    |
+| ----------|:------------:|:---------------:|:---------:|
+|key       | `Symbol\|string` |`store`（或`provide`）的唯一标识，必传 | - |
+|state     | boolean       | `store`的内容，必传         | - |
+|config    | object       | 配置选项，是否是全局注册`{ global: false }` | `{ global: false }` |
+
+#### returns
+默认返回`provide`函数，如果是全局注册，返回一个包含`install`方法的对象，它提供全局的`provide`
+
+### useInjectStore
+
+#### params
+
+| 参数      | 类型          | 描述          | 默认值    |
+| ----------|:------------:|:---------------:|:---------:|
+|key       | `Symbol\|string` |`store`（或`provide`）的唯一标识，必传 | - |
+
+#### returns
+返回一个返回值是`inject`的函数

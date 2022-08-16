@@ -27,3 +27,19 @@
   title="立即执行请求接口"
   desc="通过设置`immediate`可以控制是否立即执行，`defaultPayload`可以给请求接口携带默认参数">
 </demo>
+
+## APIS
+
+#### params
+
+| 参数      | 类型          | 描述          | 默认值    |
+| ----------|:------------:|:---------------:|:---------:|
+|request       | `() => Promise<any>` | 需包装的请求接口，必传 | - |
+|immediate     | boolean       | 是否立即执行         | `false` |
+|defaultPayload        | any       | 默认请求参数， 可选 | - |
+
+#### returns
+| 参数      | 类型          | 描述          |
+| ----------|:------------:|:---------------|
+|loading    | `Ref<boolean>` | loading状态， 改变loading状态可触发请求，建议在模板中使用 |
+|doRequest    | function     |    触发请求，可传入参数        |

@@ -4,12 +4,10 @@
  * @returns
  */
 export const request1 = (params: any) => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       if (params) {
         resolve(params);
-      } else {
-        reject();
       }
     }, 1000);
   });
@@ -20,7 +18,7 @@ export const request1 = (params: any) => {
  * @param {*} params
  * @returns
  */
-export const request2 = (params: any) => {
+export const request2 = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const tableData = [
@@ -55,7 +53,7 @@ export const request2 = (params: any) => {
  * @param {*} params
  * @returns
  */
-export const request3 = (params: any) => {
+export const request3 = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const tableData = [
