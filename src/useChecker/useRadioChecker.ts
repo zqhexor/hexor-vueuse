@@ -13,7 +13,7 @@ export function useRadioChecker({
    * @param value 选项value值
    * @returns {boolean} true:选中
    */
-  const isActive = (value: string | number) => checked.value === value;
+  const isActive = (value: string | number | undefined) => checked.value === value;
 
   /**
    * 点击选项选择操作

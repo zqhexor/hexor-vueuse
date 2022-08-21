@@ -25,7 +25,7 @@ export function useCheckboxChecker({
    * @param value 选项value值
    * @returns {boolean} true:选中
    */
-  const isActive = (value: string | number) => checked.value.includes(value);
+  const isActive = (value: string | number | undefined) => checked.value.includes(value!);
 
   // 选择全部操作
   const checkAll = () => {

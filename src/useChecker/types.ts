@@ -37,7 +37,7 @@ export interface CheckerReturn {
   /**
    * @desc 判断选项是否为选中项
    */
-  isActive: (value: string | number) => boolean;
+  isActive: (value: string | number | undefined) => boolean;
   /**
    * @desc 点击选项函数
    */
