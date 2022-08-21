@@ -11,7 +11,7 @@ module.exports = defineConfig({
       { text: '指南', link: '/guide/', activeMatch: '/guide/' },
       { text: '文档', link: '/functions/', activeMatch: '/functions/' },
       {
-        text: '1.0.3',
+        text: '1.0.4',
         items: [
           {
             text: 'CHANGELOG',
