@@ -1,4 +1,9 @@
-## 1.0.3 (2022-08-16)
+## 1.0.3 (2022-08-21)
+
+
+### Bug Fixes
+
+* isActive undefined ([b5d9734](https://github.com/zqhexor/hexor-vueuse/commit/b5d9734c44e5b1cb8753cac7e974c11680dba7e4))
 
 
 ### Features
